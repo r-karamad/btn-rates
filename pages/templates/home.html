@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>BTC to Currency Exchange Rates</h1>
+  <br>
+  <div style="text-align:left">
+    Data gets updated automatically every 60 seconds!
+  </div>
+  <br>
+  <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Value</th>
+            <th scope="col">Type</th>
+        </tr>
+    </thead>
+    <tbody>
+      {% if rates %}
+        {% for key, value in rates.items %}
+          <tr>
+            <td class="name align-middle"><a href="">{{ value.name }}</a></td>
+            <td class="rank align-middle">{{ value.unit }}</td>
+            <td class="market_cap align-middle">{{ value.value }}</td>
+            <td class="price align-middle">{{ value.type }}</td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <h3>Nothing found.</h3>
+      {% endif %}
+  </tbody>
+{% endblock content %}
