@@ -22,7 +22,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Docker Build
-      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/btn-rates:$IMAGE_VERSION
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/btn-rates:${{IMAGE_VERSION}}
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/btn-rates:$IMAGE_VERSION
+      run: docker push ${{secrets.DOCKER_USER}}/btn-rates:${{IMAGE_VERSION}}
