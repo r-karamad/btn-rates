@@ -1,5 +1,6 @@
 # BTC to Currency Exchange Rates
 This repo contains a small Django app for getting bitcoin exchange rates to other currencies.
+- It calls https://api.coingecko.com/api/v3/exchange_rates and shows the return JSON in a proper way.
 
 ## How to build image
 - Push your change into 'main' branch
