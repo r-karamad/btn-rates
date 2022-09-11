@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u5^u@j7r&y$rt)*z^#+sheoh8frrsnx6@rycrrn@+*m04-3v8j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rates.cluster.local']
 
 
 # Application definition
