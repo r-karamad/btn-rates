@@ -7,6 +7,6 @@ This repo contains a small Django app for getting bitcoin exchange rates to othe
 - Dockerhub repo: https://hub.docker.com/r/karamad/btn-rates
 
 
-## Test Cases
+## Test cases
 - Homepage
 - Coingecko API
