@@ -13,8 +13,15 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-    - name: Check out the repo
+    - name: Checkout Repo
       uses: actions/checkout@v3
+    - name: Setup Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.10
+    - name: Install Requirements
+      run: |
+        pip install -r requirements.txt
     - name: Run Tests
       run: |
         python manage.py test
