@@ -13,3 +13,5 @@ This repo contains a small Django app for getting bitcoin exchange rates to othe
 
 ## Deployment
 - https://github.com/r-karamad/btn-rates-deploy
+## TODO
+- Symantec versioning of Docker images using 'github.ref_name' and tags
